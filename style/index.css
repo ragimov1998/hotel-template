@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 0;
+}
+
+.header {
+  background-image: url(https://img2.10bestmedia.com/Images/Photos/378649/Park-Hyatt-New-York-Manhattan-Sky-Suite-Master-Bedroom-low-res_54_990x660.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 868px;
+  transition: all linear 0.35s;
+}
+.header h1 {
+  top: 34%;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  font-size: 65px;
+  left: 30%;
+  color: #fff;
+  font-weight: 100;
+}
+.header .input_container {
+  display: flex;
+  position: relative;
+  top: 69%;
+  left: 19%;
+  width: 69%;
+}
+.header label,
+.header input {
+  margin-left: 25px;
+  color: #fff;
+  font-size: 20px;
+  width: 340px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+  border-bottom-color: #fff;
+}
+
+select {
+  font-weight: 500;
+  font-family: serif;
+  width: 200px;
+  height: 70px;
+  font-size: 24px;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  border-color: transparent;
+  border-bottom-color: #fff;
+}
+select option {
+  color: black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 100px;
+  width: 100%;
+}
+.nav_left {
+  width: 60%;
+  margin: 0 auto;
+}
+.nav_left h2 {
+  font-size: 25px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: sans-serif;
+  margin-left: 10%;
+}
+.nav_right {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.nav_right .item-list li {
+  line-height: 40px;
+  position: relative;
+}
+.nav_right .item-list li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+.nav_right .item-list li:hover::after {
+  transform: scaleX(1);
+}
+.nav_right ul {
+  display: flex;
+}
+.nav_right ul .drop {
+  line-height: 40px;
+}
+.nav_right ul .drop:hover {
+  transition: 0.56s;
+}
+.nav_right ul .drop:hover .dropdown {
+  line-height: 60px;
+  visibility: visible;
+}
+.nav_right ul .drop:hover .dropdown li {
+  list-style-type: disclosure-closed;
+  margin: 0;
+  padding: 0;
+  transition: 0.35s;
+}
+.nav_right ul li {
+  margin: auto 20px;
+  color: #fff;
+  position: relative;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.nav_right ul li .dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  visibility: hidden;
+  left: 0;
+  top: 40px;
+  cursor: pointer;
+}
+.nav_right ul li .dropdown li {
+  transition: all linear 0.35s;
+}
+
+.underline:hover {
+  animation: underline 2s 1;
+}
+
+.centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 868px;
+  margin: auto 0;
+}
+.centre_left {
+  width: 27.8%;
+}
+.centre_orta {
+  width: 24%;
+}
+.centre_orta h2 {
+  font-size: 49px;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+.centre_orta p {
+  margin-bottom: 30px;
+  line-height: 30px;
+  width: 91%;
+  opacity: 0.6;
+  font-size: 18.5px;
+}
+.centre_orta .btn {
+  width: 170px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  color: chocolate;
+  border: 1px solid chocolate;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.centre_orta .btn:hover {
+  color: #fff;
+  background-color: chocolate;
+}
+.centre_right {
+  width: 16%;
+}
+
+.ourclass_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 100px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.ourclass_text {
+  width: 40%;
+}
+.ourclass_text h2 {
+  font-size: 35px;
+  font-weight: 100;
+}
+.ourclass_text p {
+  font-size: 20px;
+  line-height: 20px;
+  width: 60%;
+  opacity: 0.7;
+}
+.ourclass_right button {
+  width: 65px;
+  border: 1px solid;
+  opacity: 0.6;
+  height: 45px;
+  border-radius: 23px;
+}
+.ourclass_container {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
+  gap: 35px;
+  display: flex;
+  margin-bottom: 7%;
+}
+.ourclass .rooms {
+  transition: 2s;
+  position: absolute;
+  margin-left: 25px;
+}
+.ourclass .rooms img {
+  width: 586px;
+  height: 450px;
+}
+
+.champane {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.champane_text {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  row-gap: 50px;
+  width: 100%;
+  justify-content: center;
+}
+.champane h3 {
+  font-size: 45px;
+  font-weight: 100;
+  width: 50%;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  -webkit-text-decoration: 3px underline dotted;
+          text-decoration: 3px underline dotted;
+  margin-bottom: 65px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.container_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  height: 520px;
+  width: 36.6%;
+  position: relative;
+  opacity: 0.9;
+}
+.container_right h2 {
+  margin: 0 auto;
+  width: 85%;
+  font-size: 47px;
+  font-weight: 100;
+  position: absolute;
+  top: 11%;
+  left: 7%;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.container_right h2 :hover {
+  color: chocolate;
+}
+.container_right .take:hover {
+  color: chocolate;
+}
+.container_right p {
+  position: absolute;
+  width: 89%;
+  font-size: 20px;
+  margin: 0px auto;
+  left: 7%;
+  top: 37%;
+}
+.container_right .view {
+  left: 32.5%;
+  bottom: 27%;
+  position: absolute;
+  width: 170px;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #000;
+  color: chocolate;
+  border: 1px solid chocolate;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.container_right .view:hover {
+  color: #fff;
+  background-color: chocolate;
+  opacity: 0.8;
+}
+
+.video {
+  width: 96%;
+  margin: 80px auto;
+  position: relative;
+}
+
+.iconplay {
+  position: absolute;
+  top: 35%;
+  left: 44%;
+  width: 200px;
+  cursor: pointer;
+}
+
+.Offer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.tittle {
+  margin: 30px 0;
+}
+.tittle h2 {
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.container {
+  width: 79%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.learn {
+  position: relative;
+  width: 424px;
+  height: 450px;
+  background-color: #000;
+}
+.learn img {
+  opacity: 0.7;
+  transition: all linear 0.35s;
+}
+.learn .h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: 6.5%;
+  color: #fff;
+  font-weight: 100;
+  margin-left: 26%;
+  transition: all linear 0.35s;
+}
+
+.concept {
+  display: none;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 100;
+  bottom: 6%;
+  text-align: center;
+  color: #fff;
+  transition: all linear 0.77s;
+}
+
+.learn:hover img {
+  opacity: 0.4;
+}
+.learn:hover .h2 {
+  bottom: 36%;
+}
+.learn:hover .concept {
+  display: block;
+}
+
+.h2:hover {
+  color: chocolate;
+  cursor: pointer;
+}
+
+.slider {
+  background-color: #b86e5a;
+  color: #fff;
+  position: relative;
+  margin-top: 8%;
+}
+.slider .container {
+  width: 74%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 372px;
+  position: relative;
+}
+.slider .container .left {
+  top: 0;
+  left: 0;
+  width: 50%;
+  position: absolute;
+  transition: 2s;
+  position: absolute;
+  top: 15%;
+  line-height: 40px;
+}
+.slider .container .left h3 {
+  font-size: 30px;
+  margin-bottom: 37px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+.slider .container .left p {
+  font-size: 30px;
+  margin-bottom: 37px;
+}
+.slider .container .left span {
+  font-size: 20px;
+  font-weight: 300;
+}
+.slider button {
+  background: none;
+  border: none;
+  position: absolute;
+}
+.slider button i {
+  font-size: 40px;
+  color: #fff;
+  opacity: 0.8;
+}
+.slider .btn1 {
+  top: 45%;
+  left: 10%;
+}
+.slider .btn2 {
+  top: 45%;
+  right: 10%;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+footer .rolax {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .rolax .social {
+  display: flex;
+}
+footer .rolax .social li {
+  margin-right: 25px;
+}
+footer .rolax .social li img {
+  width: 20px;
+  height: 20px;
+}
+footer .rolax h2 {
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: system-ui;
+  color: #ff4949;
+  margin-bottom: 20px;
+  line-height: 150px;
+}
+footer .rolax a {
+  color: #ff4949;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: system-ui;
+}
+footer .rolax p {
+  font-size: 15px;
+  line-height: 40px;
+}
+footer .rolax h3 {
+  font-weight: 100;
+  line-height: 150px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: initial;
+}
+footer .rolax ul {
+  row-gap: 15px;
+  font-size: 15px;
+  width: 20%;
+}
+footer .rolax li {
+  margin-bottom: 20px;
+}
+footer .rolax li .submit {
+  border: black;
+  background: #e29c89;
+  width: 290px;
+  height: 54px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer .rolax li .email {
+  background: transparent;
+  width: 288px;
+  height: 46px;
+  color: #fff;
+  font-size: 16px;
+}
+footer .rolax .socialicon {
+  transition: 1s;
+}
+footer .rolax .socialicon:hover {
+  transform: rotate(360deg);
+  scale: 2;
+}
+footer span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 11px;
+}
+footer span img {
+  width: 16px;
+  height: 16px;
+}
+footer span a {
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.videoFrame {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}/*# sourceMappingURL=index.css.map */
