@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bb14fd2e01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="login--container">
+<div class="login--logo"></div>
+<form action="" id="dahil">
+    <p class="nameP">
+        <span><i class="fa-solid fa-user"></i></span>
+         <input required type="text" id="Username" placeholder="Username">
+    </p>
+   <p class="passwordP">
+     <span class="block"><i class="fa-solid fa-lock"></i></span>
+     <input required type="password" id="passwordLog" placeholder="Password">
+     <span class="close "><i class="fa-solid fa-eye-slash"></i></span>
+     <span class="open hidden"><i class="fa-solid fa-eye"></i></span>
+    </p>
+    
+    <div class="good">
+         <label for="">
+        <input required type="checkbox">
+        Remember me
+    </label>
+    <button class="not">Forgot passwor?</button>
+    </div>
+   
+    <button id="buttonLogin" type="submit">LOGIN</button>
+
+</form>
+
+</div>
+<div class="registr hidden">
+    <form action="" id="registrasiya">
+        <ul>
+            <li><label for="">Name</label><input id="name" type="text"></li>
+            <li><label for="">Surname</label><input id="Sorname" type="text"></li>
+            <li><label for="">Login</label><input id="Login" type="tel"></li>
+            <li><label for="">Email</label><input id="Email" type="email"></li>
+            <li><label for="">Pasword</label><input id="Pasword" type="password"></li>
+            <li><label for=""></label><input id="regist" type="submit"></li>
+        </ul>
+    </form>
+</div>
+    <script src="./main.js"></script>
+    <script>
+        let login = document.querySelector('#Login')
+        let email = document.querySelector('#Email')
+        let pass = document.querySelector('#Pasword')
+        const registerBtn = document.querySelector('#regist')
+
+        let users = []
+        const refreshList = () => {
+            if(localStorage.getItem(users)) {
+            users = JSON.parse(localStorage.getItem(users))
+        }
+        }
+        refreshList()
+        const addUser = (login, email, pass) => {
+            users.push({login: login.value, mail: email.value, password: pass.value})
+            localStorage.setItem('users', JSON.stringify(users))
+            refreshList()
+        }
+        registerBtn.addEventListener('click', e=>{
+            e.preventDefault()
+            console.log(localStorage.getItem('users'));
+            addUser(login, email, pass)
+        })
+const loginName = document.getElementById('Username')
+loginName.addEventListener('change', (e)=> {
+    console.log(e)
+})
+const passLog = document.getElementById('passwordLog')
+const logBtn = document.getElementById('buttonLogin')
+        const check = ( ) => {
+            const  pss = passLog.value
+            const log1 = loginName.value
+            const logged = JSON.parse(localStorage.getItem('users')).find(x=> log1 == x.login)
+            const loginNameStatus = logged.login == loginName.value
+            const passStatus = logged.password == passLog.value
+            if(passStatus && loginNameStatus) {
+                alert('giris edildi')
+            }
+            else {
+                alert(false)
+            }
+        }
+        logBtn.addEventListener('click', e=> {
+            check()
+        })
+
+    </script>
+</body>
+</html>

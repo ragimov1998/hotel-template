@@ -1,13 +1,8 @@
-.PopSpan {
-  font-size: 35px;
-}
-
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   outline: 0;
-  box-sizing: border-box;
 }
 
 .top {
@@ -17,6 +12,8 @@
   line-height: 49px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  z-index: 5;
 }
 .top .text {
   display: flex;
@@ -50,12 +47,12 @@
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 868px;
+  height: 430px;
   transition: all linear 0.35s;
   color: #fff;
 }
 .header h1 {
-  top: 34%;
+  top: 20%;
   width: 40%;
   text-align: center;
   position: absolute;
@@ -66,14 +63,13 @@
 }
 .header .input_container {
   display: flex;
-  position: relative;
-  top: 69%;
-  width: 60%;
-  gap: 25px;
-  left: 10%;
+  width: 51%;
+  margin: 0 auto;
+  gap: 20px;
+  line-height: 7px;
+  margin-top: 11%;
 }
 .header input {
-  margin-left: 25px;
   color: #fff;
   font-size: 20px;
   width: 250px;
@@ -83,25 +79,9 @@
   border-color: transparent;
   border-bottom-color: #fff;
 }
-.header .add {
-  color: #fff;
-  font-size: 20px;
-  width: 250px;
-  height: 60px;
-  cursor: pointer;
-  border-color: transparent;
-  border-color: #fff;
-}
-.header form {
-  position: relative;
-  line-height: 95px;
-}
 .header label {
   color: #fff;
   font-size: 20px;
-  position: absolute;
-  top: -32px;
-  left: 30px;
 }
 
 select {
@@ -117,13 +97,6 @@ select {
 }
 select option {
   color: black;
-}
-
-.fixed {
-  position: fixed;
-  z-index: 3;
-  background-color: #000;
-  top: 0;
 }
 
 .nav {
@@ -148,18 +121,12 @@ select option {
 }
 .nav_right {
   width: 30%;
-  margin: auto auto;
+  margin: 0 auto;
   font-size: 20px;
-  text-decoration-line: none;
-  color: #fff;
 }
 .nav_right .item-list li {
   line-height: 40px;
   position: relative;
-}
-.nav_right .item-list li a {
-  text-decoration-line: none;
-  color: #fff;
 }
 .nav_right .item-list li a {
   text-decoration-line: none;
@@ -202,6 +169,7 @@ select option {
 .nav_right ul li {
   margin: auto 20px;
   color: #fff;
+  position: relative;
   transition: all linear 0.35s;
   cursor: pointer;
 }
@@ -268,83 +236,6 @@ select option {
   width: 16%;
 }
 
-.ourclass_header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  line-height: 100px;
-  margin-top: 80px;
-  margin-bottom: 60px;
-}
-.ourclass_text {
-  width: 40%;
-}
-.ourclass_text h2 {
-  font-size: 35px;
-  font-weight: 100;
-}
-.ourclass_text p {
-  font-size: 20px;
-  line-height: 20px;
-  width: 60%;
-  opacity: 0.7;
-}
-.ourclass_right button {
-  width: 65px;
-  border: 1px solid;
-  opacity: 0.6;
-  height: 45px;
-  border-radius: 23px;
-}
-.ourclass_container {
-  position: relative;
-  background-color: #fff;
-  width: 100%;
-  overflow: hidden;
-  height: 450px;
-  gap: 35px;
-  display: flex;
-  margin-bottom: 7%;
-}
-.ourclass .rooms {
-  transition: 2s;
-  position: absolute;
-  margin-left: 25px;
-}
-.ourclass .rooms img {
-  width: 586px;
-  height: 450px;
-}
-
-.champane {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
-.champane_text {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  row-gap: 50px;
-  width: 100%;
-  justify-content: center;
-}
-.champane h3 {
-  font-size: 45px;
-  font-weight: 100;
-  width: 50%;
-  text-align: center;
-}
-.champane a {
-  color: #000;
-  -webkit-text-decoration: 3px underline dotted;
-          text-decoration: 3px underline dotted;
-  margin-bottom: 65px;
-  font-size: 20px;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -359,7 +250,7 @@ select option {
   background-color: #000;
   color: #fff;
   height: 520px;
-  width: 36.6%;
+  width: 30%;
   position: relative;
   opacity: 0.9;
 }
@@ -411,9 +302,11 @@ select option {
 }
 
 .video {
-  width: 96%;
-  margin: 80px auto;
+  width: 100%;
   position: relative;
+}
+.video img {
+  margin-left: 2%;
 }
 
 .iconplay {
@@ -440,12 +333,6 @@ select option {
   font-size: 48px;
   font-weight: 100;
   text-align: center;
-}
-
-.container {
-  width: 79%;
-  display: flex;
-  margin: 0 auto;
 }
 
 .learn {
@@ -666,319 +553,137 @@ footer span a {
   z-index: 2;
 }
 
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
+.centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 868px;
+  margin: auto 0;
+}
+.centre_left {
+  width: 27.8%;
+}
+.centre_orta {
+  width: 24%;
+}
+.centre_orta h2 {
+  font-size: 49px;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+.centre_orta p {
+  margin-bottom: 30px;
+  line-height: 30px;
+  width: 91%;
+  opacity: 0.6;
+  font-size: 18.5px;
+}
+.centre_orta .btn {
+  width: 170px;
   height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
+  font-weight: 700;
+  font-size: 15px;
+  color: chocolate;
+  border: 1px solid chocolate;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.centre_orta .btn:hover {
+  color: #fff;
+  background-color: chocolate;
+}
+.centre_right {
+  width: 16%;
 }
 
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
+.champane {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.champane_text {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  row-gap: 50px;
+  width: 100%;
+  justify-content: center;
+}
+.champane h3 {
+  font-size: 45px;
+  font-weight: 100;
+  width: 50%;
+  text-align: center;
+}
+.champane a {
+  color: #000;
+  -webkit-text-decoration: 3px underline dotted;
+          text-decoration: 3px underline dotted;
+  margin-bottom: 65px;
+  font-size: 20px;
+}
+.champane_right {
+  width: 30%;
+}
+
+.ourclass {
+  margin-bottom: 8%;
+}
+.ourclass_header {
+  margin: 6% 5% 4%;
+}
+.ourclass_header h2 {
+  font-size: 35px;
+  font-weight: 100;
+}
+.ourclass_header p {
+  font-size: 20px;
+  line-height: 20px;
+  width: 28%;
+  opacity: 0.7;
+}
+.ourclass_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  gap: 20px;
+}
+.ourclass_container img {
+  width: 530px;
+  height: 370px;
+}
+.ourclass .rooms {
+  position: relative;
+  transition: 0.35s;
+}
+.ourclass .rooms .price {
+  color: #2e0000;
+  position: absolute;
+  bottom: 17%;
+  left: 7%;
+  line-height: 25px;
+  cursor: pointer;
+  display: none;
+  transition: 0.35s;
+}
+.ourclass .rooms .price:hover {
   color: #fff;
 }
-
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
+.ourclass .rooms .price h3 {
+  font-size: 40px;
+  font-weight: 100;
 }
-
-#button:active {
-  background-color: #555;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popop {
-  z-index: 9;
-  gap: 20px;
-  display: flex;
-  justify-content: center;
-}
-.popop i {
-  color: #7db27c;
-}
-
-.login--container {
-  position: absolute;
-  top: 30%;
-  z-index: 5;
-  width: 400px;
-  background-color: rgba(106, 106, 106, 0.6901960784);
-  padding: 20px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  align-items: center;
-  border-radius: 30px;
-}
-.login--container .nameP {
-  position: relative;
-}
-.login--container .nameP input {
-  width: 100%;
-  height: 30px;
-  padding-left: 30px;
-}
-.login--container .nameP span {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-}
-.login--container #dahil {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-}
-.login--container .passwordP {
-  position: relative;
-}
-.login--container .passwordP input {
-  width: 100%;
-  height: 30px;
-  padding-left: 30px;
-  box-sizing: border-box;
-}
-.login--container .passwordP .block {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-}
-.login--container .passwordP .eyes {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  cursor: pointer;
-}
-.login--container .not {
-  background-color: transparent;
-  border: none;
-  color: red;
-  cursor: pointer;
-  font-size: 13px;
-}
-.login--container .not:hover {
-  text-decoration: underline;
-}
-.login--container #buttonLogin {
-  background: green;
-  border: none;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  outline: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  height: 30px;
-}
-.login--container h3 {
-  font-size: 19px;
-  font-family: sans-serif;
-  color: rgb(255, 255, 255);
-}
-.login--container .good {
-  display: flex;
-  justify-content: space-between;
-}
-.login--container label {
-  font-size: 14px;
-}
-.login--container label input {
-  width: 12px;
-}
-
-.overflow {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 5;
-}
-
-.registr {
-  position: absolute;
-  top: 30%;
-  z-index: 500;
-  background-color: rgba(106, 106, 106, 0.6901960784);
-  padding: 20px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  align-items: center;
-  border-radius: 30px;
-}
-.registr h3 {
-  font-size: 19px;
-  font-family: sans-serif;
-  color: rgb(255, 255, 255);
-}
-.registr #registrasiya {
-  width: 400px;
-}
-.registr #registrasiya ul {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-}
-.registr #registrasiya ul .Kecid span {
-  color: green;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 10px;
+.ourclass .rooms .price p {
   font-size: 20px;
+  margin-top: 10px;
 }
-.registr #registrasiya ul .Kecid span:hover::after {
-  content: "";
-  width: 33%;
-  height: 1px;
-  position: absolute;
-  left: 0px;
-  bottom: -1px;
-  background: #c21f1f;
+.ourclass .rooms:hover {
+  scale: 1.05;
 }
-.registr #registrasiya ul li {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-.registr #registrasiya ul li #regist {
-  background: green;
-  border: none;
-  outline: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  height: 30px;
-  font-weight: 700;
-  font-size: 19px;
-}
-.registr #registrasiya ul li #Login {
-  padding-left: 30px;
-}
-.registr #registrasiya ul li #Email {
-  padding-left: 30px;
-}
-.registr #registrasiya ul li #Pasword {
-  padding-left: 30px;
-}
-.registr #registrasiya ul li input {
-  width: 100%;
-  height: 30px;
-}
-.registr label {
-  font-size: 14px;
-  color: darkgreen;
-}
-.registr .LoginRegistrI {
-  position: relative;
-}
-.registr #LoginRegistrI {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.registr .EmailRegistrI {
-  position: relative;
-}
-.registr #EmailRegistrI {
-  position: absolute;
-  top: 31px;
-  left: 10px;
-}
-.registr .PaswordRegistrI {
-  position: relative;
-}
-.registr #PaswordRegistrI-1 {
-  position: absolute;
-  top: 31px;
-  left: 10px;
-}
-.registr #PaswordRegistrI-2 {
-  top: 31px;
-  right: 10px;
-  position: absolute;
-  cursor: pointer;
-}
-.registr #PaswordRegistrI-3 {
-  top: 31px;
-  right: 10px;
-  position: absolute;
-  cursor: pointer;
-}
-
-.PopSpan {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.go--top {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  z-index: 15;
-  transform: translateY(-50%);
-  font-size: 20px;
-  padding: 10px 15px;
-  background-color: #12c247;
-  cursor: pointer;
-}
-.go--top i {
-  color: #d0ff00;
-  font-size: 18px;
-  box-sizing: border-box;
-}
-.go--top::after {
-  position: absolute;
-  top: -24px;
-  left: 0px;
-  content: "";
-  width: 100%;
-  background-color: #12c247;
-  height: 30px;
-  border-radius: 45px 45px 0px 0px;
-  border: none;
-}
-.go--top:hover {
-  background-color: #46bc69;
-}
-.go--top:hover i {
-  color: blue;
-}
-.go--top:hover::after {
-  background-color: #46bc69;
-}
-
-.hidden {
-  display: none;
-}/*# sourceMappingURL=index.css.map */
+.ourclass .rooms:hover .price {
+  display: block;
+}/*# sourceMappingURL=rooms.css.map */

@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 0;
+}
+
+.top {
+  background-color: #2e0000;
+  color: #fff;
+  width: 100%;
+  line-height: 49px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 5;
+}
+.top .text {
+  display: flex;
+  margin-left: 3%;
+  gap: 15px;
+}
+.top .text p {
+  font-size: 16px;
+  font-family: system-ui;
+}
+.top .text span {
+  font-size: 14px;
+  font-family: system-ui;
+}
+.top .right {
+  display: flex;
+  gap: 20px;
+  margin-right: 3%;
+}
+.top .right img {
+  width: 19px;
+}
+.top .right img:hover {
+  transform: re;
+}
+
+.header {
+  background-image: url(https://c0.wallpaperflare.com/preview/811/935/645/adults-analysis-brainstorming-collaboration.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  transition: all linear 0.35s;
+  color: #fff;
+}
+.header h1 {
+  top: 30%;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  font-size: 65px;
+  left: 30%;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 100px;
+  width: 100%;
+}
+.nav_left {
+  width: 60%;
+  margin: 0 auto;
+}
+.nav_left h2 {
+  font-size: 25px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: sans-serif;
+  margin-left: 10%;
+}
+.nav_right {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.nav_right .item-list li {
+  line-height: 40px;
+  position: relative;
+}
+.nav_right .item-list li a {
+  text-decoration-line: none;
+  color: #fff;
+}
+.nav_right .item-list li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+.nav_right .item-list li:hover::after {
+  transform: scaleX(1);
+}
+.nav_right ul {
+  display: flex;
+}
+.nav_right ul .drop {
+  line-height: 40px;
+}
+.nav_right ul .drop:hover {
+  transition: 0.56s;
+}
+.nav_right ul .drop:hover .dropdown {
+  line-height: 60px;
+  visibility: visible;
+}
+.nav_right ul .drop:hover .dropdown li {
+  list-style-type: disclosure-closed;
+  margin: 0;
+  padding: 0;
+  transition: 0.35s;
+}
+.nav_right ul li {
+  margin: auto 20px;
+  color: #fff;
+  position: relative;
+  transition: all linear 0.35s;
+  cursor: pointer;
+}
+.nav_right ul li .dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  visibility: hidden;
+  left: 0;
+  top: 40px;
+  cursor: pointer;
+}
+.nav_right ul li .dropdown li {
+  transition: all linear 0.35s;
+}
+.nav .underline:hover {
+  animation: underline 2s 1;
+}
+
+.end {
+  margin: 7% 0;
+}
+.end .getintouch {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 50px auto;
+  width: 66%;
+}
+.end .container {
+  display: flex;
+  justify-content: center;
+}
+.end .container .left {
+  width: 45%;
+}
+.end .container .left .inputlar #area {
+  width: 98%;
+  padding: 10px;
+  height: 200px;
+  opacity: 0.3;
+  font-size: 18px;
+}
+.end .container .left .inputlar .aaa {
+  justify-content: space-between;
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+}
+.end .container .left .inputlar .aaa input {
+  border: 1px solid #e5e6e9;
+  border-radius: 0px;
+  height: 48px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
+  width: 48%;
+  opacity: 0.8;
+}
+.end .container .left .inputlar .lastinp {
+  border: 1px solid #e5e6e9;
+  border-radius: 0px;
+  height: 48px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
+  width: 98%;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+.end .container .left .inputlar .postbtn {
+  color: #e29c89;
+  background-color: #fff;
+  font-family: auto;
+  width: 150px;
+  font-size: 18px;
+  transition: 0.35s;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  border: 1px solid #e29c89;
+}
+.end .container .left .inputlar .postbtn:hover {
+  color: #fff;
+  background-color: #e29c89;
+}
+.end .container .right {
+  gap: 50px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+.end .container .right .icc {
+  display: flex;
+}
+.end .container .right .icc i {
+  font-size: 35px;
+  margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.35s;
+  cursor: pointer;
+}
+.end .container .right .icc i:hover {
+  rotate: -15deg;
+  scale: 1.3;
+}
+.end .container .right .icc .txx {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+footer .rolax {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .rolax .social {
+  display: flex;
+}
+footer .rolax .social li {
+  margin-right: 25px;
+}
+footer .rolax .social li img {
+  width: 20px;
+  height: 20px;
+}
+footer .rolax h2 {
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: system-ui;
+  color: #ff4949;
+  margin-bottom: 20px;
+  line-height: 150px;
+}
+footer .rolax a {
+  color: #ff4949;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: system-ui;
+}
+footer .rolax p {
+  font-size: 15px;
+  line-height: 40px;
+}
+footer .rolax h3 {
+  font-weight: 100;
+  line-height: 150px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: initial;
+}
+footer .rolax ul {
+  row-gap: 15px;
+  font-size: 15px;
+  width: 20%;
+}
+footer .rolax li {
+  margin-bottom: 20px;
+}
+footer .rolax li .submit {
+  border: black;
+  background: #e29c89;
+  width: 290px;
+  height: 54px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer .rolax li .email {
+  background: transparent;
+  width: 288px;
+  height: 46px;
+  color: #fff;
+  font-size: 16px;
+}
+footer .rolax .socialicon {
+  transition: 1s;
+}
+footer .rolax .socialicon:hover {
+  transform: rotate(360deg);
+  scale: 2;
+}
+footer span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 11px;
+}
+footer span img {
+  width: 16px;
+  height: 16px;
+}
+footer span a {
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+}/*# sourceMappingURL=contact.css.map */

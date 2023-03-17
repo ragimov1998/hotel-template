@@ -5,114 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="./style/index.css" />
-    <!-- icon kit -->
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/8096198d37.css"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./loading/loading.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/style/rooms.css" />
+    <link rel="stylesheet" href="/loading/loading.css">
+    <link rel="stylesheet" href="/style/toppage.css">
+
   </head>
-
   <body>
-    <!-- loading -->
-    <div class="loader">
-      <img src="./loading/Eclipse-0.9s-200px.svg" alt="" />
-    </div>
-    <!-- end -->
-
+     <!-- loading -->
+     <div class="loader">
+      <img src="/loading/Eclipse-0.9s-200px.svg" alt="">
+          </div>
+          <!-- end -->
+          
     <!-- Back to top button -->
     <a id="button"></a>
-
-    <div class="overflow hidden"></div>
-    <div class="popop">
-      <div class="login--container hidden">
-        <h2>Giris</h2>
-        <h3>Saytımıza xoş gəlmisiniz.</h3>
-        <form action="" id="dahil">
-          <p class="nameP">
-            <span><i class="fa-solid fa-user"></i></span>
-            <input required type="text" id="Username" placeholder="Login" />
-          </p>
-          <p class="passwordP">
-            <span class="block"><i class="fa-solid fa-lock"></i></span>
-            <input
-              required
-              type="password"
-              id="passwordLog"
-              placeholder="Password"
-            />
-            <span class="close eyes"
-              ><i class="fa-solid fa-eye-slash"></i
-            ></span>
-            <span class="open eyes hidden"
-              ><i class="fa-solid fa-eye"></i
-            ></span>
-          </p>
-
-          <div class="good">
-            <label for="">
-              <input type="checkbox" />
-              Remember me
-            </label>
-            <button class="not">Forgot passwor?</button>
-          </div>
-
-          <button id="buttonLogin" type="submit">Daxil ol</button>
-        </form>
-      </div>
-      <div class="registr hidden">
-        <h2>Registrasiya</h2>
-        <h3>Saytimiza qeydiyat olun</h3>
-        <form action="" id="registrasiya">
-          <ul>
-            <li class="LoginRegistrI">
-              <label for="">Login: </label
-              ><input placeholder="Login" id="Login" type="tel" /><i
-                id="LoginRegistrI"
-                class="fa-solid fa-user"
-              ></i>
-            </li>
-            <li class="EmailRegistrI" i>
-              <label for="">Email: </label
-              ><input
-                placeholder="Email dahil edin"
-                id="Email"
-                type="email"
-              /><i id="EmailRegistrI" class="fa-solid fa-envelope"></i>
-            </li>
-
-            <li class="PaswordRegistrI">
-              <label for="">Pasword: </label
-              ><input
-                placeholder="Password dahil edin"
-                id="Pasword"
-                type="password"
-              />
-              <i id="PaswordRegistrI-1" class="fa-solid fa-lock"></i>
-              <i id="PaswordRegistrI-2" class="fa-solid fa-eye hidden"></i>
-              <i id="PaswordRegistrI-3" class="fa-solid fa-eye-slash"></i>
-            </li>
-            <li class="Kecid">
-              <label for=""></label><span class="outP">Girise kec</span
-              ><input id="regist" type="submit" value="Sign up" />
-            </li>
-            <!-- <li><label for=""></label></li> -->
-          </ul>
-        </form>
-      </div>
-    </div>
-
     <section class="top">
       <div class="text">
         <p>Call Us: +10 (89) 675 5456</p>
@@ -123,7 +29,7 @@
           <a href="https://www.facebook.com/">
             <img
               class="socialicon"
-              src="./style/icons/facebook(white).svg"
+              src="/style/icons/facebook(white).svg"
               alt=""
           /></a>
         </li>
@@ -131,7 +37,7 @@
           <a href="https://www.twitter.com/"
             ><img
               class="socialicon"
-              src="./style/icons/twitter(white).svg"
+              src="/style/icons/twitter(white).svg"
               alt=""
             />
           </a>
@@ -140,7 +46,7 @@
           <a href="https://www.linkedin.com/"
             ><img
               class="socialicon"
-              src="./style/icons/linkedin(white).svg"
+              src="/style/icons/linkedin(white).svg"
               alt=""
             />
           </a>
@@ -148,7 +54,7 @@
       </div>
     </section>
     <section class="header">
-      <h1>Rest Journey in Single step, in the breathtaking</h1>
+      <h1>Our Rooms</h1>
 
       <div class="nav">
         <div class="nav_left">
@@ -166,17 +72,13 @@
                 <li><a href="/pages/blogdetails.html">Blog Dedails</a></li>
                 <li><a href="/pages/element.html">Element</a></li>
                 <li><a href="/pages/filter.html">Gallery</a></li>
+
               </ul>
             </li>
-            <li class="underline">
-              <a href="/pages/contact.html">Contact Us</a>
-            </li>
-            <i class="fa-solid fa-user PopSpan"></i>
-            <li></li>
+            <li class="underline"><a href="/pages/contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
-
       <div class="input_container">
         <form action="get">
           <label for="start">Check in date *</label>
@@ -194,31 +96,6 @@
           <option value="Adult">Children</option>
           <option value="Children">Children</option>
         </select>
-        <input class="add" type="submit" value="Search" />
-      </div>
-    </section>
-    <section class="centre">
-      <div class="centre_left">
-        <img
-          src="https://preview.colorlib.com/theme/rolax/assets/img/gallery/about.jpg"
-          alt=""
-        />
-      </div>
-      <div class="centre_orta">
-        <h2>Luxury & Comfort Our services and wonders of Prague</h2>
-        <p>
-          The concept and service of the best luxury hotels in Asturias in our
-          sophisticated Urban Double and Unique Junior Suite rooms, with the
-          possibility of enjoying a furnished terrace in our Double Urban Loft
-          and Unique Junior Loft Suite.
-        </p>
-        <button class="btn">Learn More</button>
-      </div>
-      <div class="centre_right">
-        <img
-          src="https://preview.colorlib.com/theme/rolax/assets/img/gallery/about-right.jpg"
-          alt=""
-        />
       </div>
     </section>
     <section class="ourclass">
@@ -230,129 +107,125 @@
             sophisticated.
           </p>
         </div>
-        <div class="ourclass_right">
-          <button class="next">
-            <img src="./style/arrow-left.svg" alt="left" />
-          </button>
-          <button class="prev">
-            <img src="./style/arrow-right.svg" alt="right" />
-          </button>
-        </div>
+        <div class="ourclass_right"></div>
       </div>
       <div class="ourclass_container">
-        <div class="ourclass_container-room1 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://www.theplettenberghotel.com/wp-content/uploads/2017/06/TP-Accom-LuxuryDoubleRoom-Dook-013-1080x675.jpg"
             alt="room1"
           />
-          <h3>Luxurious Room</h3>
-          <p>2 Adult 1 Children</p>
-          <p>
-            Started from <b><h5>$500</h5></b>
-          </p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room2 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg"
             alt="room2"
           />
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room3 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"
             alt="room3"
           />
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room4 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://t3.ftcdn.net/jpg/02/71/08/28/360_F_271082810_CtbTjpnOU3vx43ngAKqpCPUBx25udBrg.jpg"
             alt="room3"
           />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room5 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://i.pinimg.com/originals/c6/6f/b7/c66fb7b279a660e3daf84e7d32efdf07.jpg"
             alt=""
           />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room6 rooms">
+        <div class="ourclass_container-room rooms">
           <img src="https://vwartclub.com/media/projects/5335/1.jpg" alt="" />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room7 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://designingidea.com/wp-content/uploads/2016/08/luxury-mediterranean-style-bedroom-with-wide-plank-wood-flooring-and-exposed-wood-beams.jpg"
             alt=""
           />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room8 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="http://cdn.home-designing.com/wp-content/uploads/2018/10/dark-wall-master-bedroom-luxury-decorating-ideas-with-pendant-lights.jpg"
             alt=""
           />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
-        <div class="ourclass_container-room9 rooms">
+        <div class="ourclass_container-room rooms">
           <img
             src="https://media.istockphoto.com/id/1213695547/photo/3d-rendering-of-an-elegant-bedroom.jpg?s=612x612&w=0&k=20&c=yxOoaz2IAd9zvtlXeS-Th-AiXhaCtMIxOONfGbtGeG8="
             alt=""
           />
-          <h3></h3>
-          <p></p>
+          <div class="price">
+            <h3>Luxurious Room</h3>
+            <p>2 Adult 1 Children</p>
+            <span>Started from <b>$500</b></span>
+          </div>
         </div>
       </div>
     </section>
-    <section class="champane">
-      <div class="champane_text">
-        <h3>
-          Surrounded by galleries, boutiques, restaurants and cafés, our Hotel
-          is a hub of energy and style.
-        </h3>
-        <a href="#home">Find a Room For You</a>
+    <section>
+      <div class="video">
+        <img
+          src="https://preview.colorlib.com/theme/rolax/assets/img/gallery/video-bg.jpg.webp"
+          alt="video"
+        />
+        <img class="iconplay" src="/style/icons/play-circle.svg" alt="" />
+        <iframe
+          class="hidden videoFrame"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A-yYTkfrHR0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-      <div class="container">
-        <div class="container_left">
-          <img
-            src="https://preview.colorlib.com/theme/rolax/assets/img/gallery/project-img.jpg"
-            alt="champane"
-          />
-        </div>
-        <div class="container_right">
-          <h2 class="take">Take advantage of our seasonal specials.</h2>
-          <p>
-            The concept and service of the best luxury hotels in Asturias in our
-            sophisticated Urban Double and Unique Junior Suite rooms, with the
-            possibility of enjoying a furnished terrace in our Double Urban Loft
-            and Unique Junior Loft Suite.
-          </p>
-          <button class="view btn">View Project</button>
-        </div>
-      </div>
-    </section>
-    <section class="video">
-      <img
-        src="https://preview.colorlib.com/theme/rolax/assets/img/gallery/video-bg.jpg.webp"
-        alt="video"
-      />
-      <img class="iconplay" src="./style/icons/play-circle.svg" alt="" />
-      <iframe
-        class="hidden videoFrame"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/A-yYTkfrHR0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
     </section>
     <section class="Offer">
       <div class="tittle"><h2>We Offer to Our Guest</h2></div>
@@ -483,7 +356,7 @@
                 <a href="https://www.instagram.com/">
                   <img
                     class="socialicon"
-                    src="./style/icons/instagram.svg"
+                    src="/style/icons/instagram.svg"
                     alt=""
                 /></a>
               </li>
@@ -491,7 +364,7 @@
                 <a href="https://www.facebook.com/"
                   ><img
                     class="socialicon"
-                    src="./style/icons/facebook.svg"
+                    src="/style/icons/facebook.svg"
                     alt=""
                   />
                 </a>
@@ -500,7 +373,7 @@
                 <a href="https://www.linkedin.com/"
                   ><img
                     class="socialicon"
-                    src="./style/icons/linkedin.svg"
+                    src="/style/icons/linkedin.svg"
                     alt=""
                   />
                 </a>
@@ -509,7 +382,7 @@
                 <a href="https://www.mail.ru/"
                   ><img
                     class="socialicon"
-                    src="./style/icons/mail.svg"
+                    src="/style/icons/mail.svg"
                     alt=""
                   />
                 </a>
@@ -549,18 +422,10 @@
         <img src="./style/icons/feather.svg" />by <a href="">Ragimov</a>
       </span>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/style/toppage.js"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
-      integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8096198d37.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="/style/rooms.js"></script>
     <script src="/loading/loading.js"></script>
   </body>
 </html>
